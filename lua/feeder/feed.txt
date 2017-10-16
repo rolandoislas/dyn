@@ -1,0 +1,7 @@
+Created by Fxz_y
+
+Attemtps to feed an item in the current slot to whatever is in front of a turtle
+
+Arguments:
+- amount
+    amount to feed - default 1

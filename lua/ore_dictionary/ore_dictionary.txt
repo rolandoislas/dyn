@@ -1,0 +1,9 @@
+Created by Fxz_y
+
+Computer:
+
+Prints ore dictionary information when an ore dictionary is right clicked with an item
+
+Turtle:
+
+Helper script that transmutes items between ore dictionary entries

@@ -1,0 +1,155 @@
+[
+  {
+    "directory": "lua/example",
+    "name": "example",
+    "peripherals": ["*"],
+    "extra": ["example_lib.lua"],
+    "version": "1.0",
+    "depends": [],
+    "description": "An example program for the Dyn package manager"
+  },
+  {
+    "directory": "lua/analyzers",
+    "name": "analyze",
+    "peripherals": ["*Analyzer"],
+    "extra": [],
+    "version": "1.0",
+    "depends": [],
+    "description": "Prints information from an analyzer"
+  },
+  {
+    "directory": "lua/antenna",
+    "name": "helmet_list",
+    "peripherals": ["antenna"],
+    "extra": [],
+    "version": "1.0",
+    "depends": [],
+    "description": "List players wearing smart helmets attached to an antenna"
+  },
+  {
+    "directory": "lua/barrel",
+    "name": "barrel",
+    "peripherals": ["barrel"],
+    "extra": [],
+    "version": "1.0",
+    "depends": [],
+    "description": "Barrel turtle helper"
+  },
+  {
+    "directory": "lua/chat_box",
+    "name": "talk",
+    "peripherals": ["chatBox"],
+    "extra": [],
+    "version": "1.0",
+    "depends": [],
+    "description": "Chatbox helper"
+  },
+  {
+    "directory": "lua/compass",
+    "name": "direction",
+    "peripherals": ["compass"],
+    "extra": [],
+    "version": "1.0",
+    "depends": [],
+    "description": "Print the direction of a compass turtle"
+  },
+  {
+    "directory": "lua/environment_scanner",
+    "name": "biome",
+    "peripherals": ["environmentScanner"],
+    "extra": [],
+    "version": "1.0",
+    "depends": [],
+    "description": "Prints biome information"
+  },
+  {
+    "directory": "lua/environment_scanner",
+    "name": "temperature",
+    "peripherals": ["environmentScanner"],
+    "extra": [],
+    "version": "1.0",
+    "depends": [],
+    "description": "Prints temerature inforamtion"
+  },
+  {
+    "directory": "lua/environment_scanner",
+    "name": "weather",
+    "peripherals": ["environmentScanner"],
+    "extra": [],
+    "version": "1.0",
+    "depends": [],
+    "description": "Prints weather inforamtion"
+  },
+  {
+    "directory": "lua/feeder",
+    "name": "feed",
+    "peripherals": ["feeder"],
+    "extra": [],
+    "version": "1.0",
+    "depends": [],
+    "description": "Feeder helper"
+  },
+  {
+    "directory": "lua/ore_dictionary",
+    "name": "ore_dictionary",
+    "peripherals": ["oreDictionary"],
+    "extra": ["ore_dictionary_turtle.lua"],
+    "version": "1.0",
+    "depends": [],
+    "description": "Ore dictionary helper"
+  },
+  {
+    "directory": "lua/peripheral_container",
+    "name": "contained",
+    "peripherals": ["peripheralContainer"],
+    "extra": [],
+    "version": "1.0",
+    "depends": [],
+    "description": "Prints contained peripherals"
+  },
+  {
+    "directory": "lua/player_sensor",
+    "name": "check_click",
+    "peripherals": ["playerSensor"],
+    "extra": [],
+    "version": "1.0",
+    "depends": [],
+    "description": "Prints the player name of the player that clicked the sensor"
+  },
+  {
+    "directory": "lua/player_sensor",
+    "name": "nearby_players",
+    "peripherals": ["playerSensor"],
+    "extra": [],
+    "version": "1.0",
+    "depends": [],
+    "description": "Prints a list of nearby players"
+  },
+  {
+    "directory": "lua/player_sensor",
+    "name": "online_players",
+    "peripherals": ["playerSensor"],
+    "extra": [],
+    "version": "1.0",
+    "depends": [],
+    "description": "Prints a list of online players"
+  },
+  {
+    "directory": "lua/speaker",
+    "name": "speak",
+    "peripherals": ["speaker"],
+    "extra": [],
+    "version": "1.0",
+    "depends": [],
+    "description": "Speak helper for the speaker"
+  },
+  {
+    "directory": "lua/xp",
+    "name": "enchant",
+    "peripherals": ["xp"],
+    "extra": [],
+    "version": "1.0",
+    "depends": [],
+    "description": "Enchantment helper"
+  }
+]

@@ -1,0 +1,8 @@
+Example is an example program added by PeripheralsPlusOne and is managed by the Dyn package manager.
+
+It just prints help text.
+
+For more information (and to add your own programs) see https://github.com/rolandoislas/dyn.
+
+The long description of the program should be in this file while short descriptions remain in the head of the other files.
+This file should also describe the arguments the program accepts (if any).

@@ -1,0 +1,3 @@
+Created by Fxz_y
+
+Prints the player name of the player that right clicked the sensor

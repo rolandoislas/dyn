@@ -1,0 +1,7 @@
+Created by austinv11
+
+Helper script for the speaker's synthesize function
+
+Arguments:
+- var args
+    words the speaker should try to synthesize

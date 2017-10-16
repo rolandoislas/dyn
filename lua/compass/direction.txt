@@ -1,0 +1,3 @@
+Created by austinv11
+
+Prints the direction a navigational turtle is facing
