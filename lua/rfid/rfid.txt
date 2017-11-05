@@ -1,0 +1,14 @@
+The script "rfid.lua" provides a command line interface to read and write a string to an RFID chip.
+
+Usage:
+
+rfid <command>
+
+Commands:
+
+- read
+  Searches for the nearest RFID chip and prints its data as a string.
+- write <string_to_write>
+  Searches for the nearest RFID chip and writes the string value to it
+
+Note: Authentication is performed with the default key (0xffffff). If authentication or a read/write fails, the operation will stop and an error will be displayed.

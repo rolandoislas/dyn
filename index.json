@@ -151,5 +151,14 @@
     "version": "1.0",
     "depends": [],
     "description": "Enchantment helper"
+  },
+  {
+    "directory": "lua/rfid",
+    "name": "rfid",
+    "peripherals": ["rfid_reader_writer"],
+    "extra": [],
+    "version": "0.1",
+    "depends": [],
+    "description": "RFID Helper"
   }
 ]
