@@ -20,7 +20,13 @@ local BLOCK_SIZE = 16
 function Rfid:new()
     local rfid = {}
     setmetatable(rfid, Rfid)
-    rfid.rfid = peripheral.find("rfid_reader_writer")
+    -- ComputerCraft
+    if peripheral then
+        rfid.rfid = peripheral.find("rfid_reader_writer")
+    -- OpenComputers
+    else
+        rfid.rfid = require("component").rfid_reader_writer
+    end
     if not rfid.rfid then
         error("RFID Reader/Writer not found")
     end
@@ -49,7 +55,7 @@ end
 ---
 function table_to_string(t)
     local s = ""
-    for k, v in pairs(t) do
+    for k, v in ipairs(t) do
         s = s .. v .. ","
     end
     return s
@@ -76,7 +82,7 @@ end
 --- @return table
 ---
 function copy_table(t, start_index, end_index, empty_value)
-    end_index = end_index or table.getn(t)
+    end_index = end_index or #t
     local new_table = {}
     for item_index = start_index, end_index do
         local item = t[item_index]
@@ -93,7 +99,7 @@ end
 --- @return boolean equality
 ---
 function areTablesEqual(table_one, table_two)
-    if table.getn(table_one) ~= table.getn(table_two) then
+    if #table_one ~= #table_two then
         return false
     end
     for table_one_index, table_one_value in pairs(table_one) do
@@ -119,7 +125,7 @@ function Rfid:read()
             if not block_table then
                 error(string.format("Auth error. Block: %d", block))
             end
-            for byte_index, byte in pairs(block_table) do
+            for byte_index, byte in ipairs(block_table) do
                 data = data .. string.char(byte)
             end
         end
@@ -170,9 +176,9 @@ function Rfid:check_argument_count(args, index, name, max)
     if max == nil then
         max = true
     end
-    if table.getn(args) < index then
+    if #args < index then
         error("Missing " .. name .. ". Try Try \"help rfid\".")
-    elseif max and table.getn(args) > index then
+    elseif max and #args > index then
         error("Too many " .. name .. "s passed. Try \"help rfid\".")
     end
 end

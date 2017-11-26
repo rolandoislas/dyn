@@ -1,6 +1,7 @@
 # How to Contribute
 
-A working knowledge of Git and Lua/ComputerCraft scripting is required for developing programs for this repository.
+A working knowledge of Git and Lua/ComputerCraft/OpenComputers scripting is required for developing programs for this
+ repository.
 
 # Tests
 
@@ -48,6 +49,10 @@ The script file name must match the name given in the index and it must reside i
  `lua/example/example.txt`.
 
 ### Index Entry
+
+The following instructions describe the format for `index.json`, which is the index used by Dyn. If contributing a
+ script for OpenComputers, see `programs.cfg` and the [OpenComputers documentation] for 
+ _The OpenPrograms Package Manager_ (OPPM).
 
 ```json
 {
@@ -101,3 +106,4 @@ The script file name must match the name given in the index and it must reside i
 
 [Luacheck]: https://github.com/mpeterv/luacheck
 [pytest]: https://docs.pytest.org/en/latest/
+[OpenComputers documentation]: http://ocdoc.cil.li/tutorial:program:oppm

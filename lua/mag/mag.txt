@@ -1,0 +1,11 @@
+Mag Card Reader/Writer Helper
+
+Usage:
+
+- read
+  Waits for a card swipe and will output the tracks' data
+- write <int track_index> <string data>
+  Sets data to be written for a track
+- clear [int track_index]
+  Clears a data buffer
+  Clears all buffers if no index is passed
