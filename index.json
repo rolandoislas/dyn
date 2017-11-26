@@ -160,5 +160,14 @@
     "version": "0.1",
     "depends": [],
     "description": "RFID Helper"
+  },
+  {
+    "directory": "lua/mag",
+    "name": "mag",
+    "peripherals": ["mag_reader_writer"],
+    "extra": [],
+    "version": "0.1",
+    "depends": [],
+    "description": "Mag Card Helper"
   }
 ]
